@@ -39,21 +39,21 @@ function App() {
   },[length,numberAllowed,character,passwordGenerator])
   
   return (
-   <div className='w-full min-h-screen bg-blue-300'>
-     <div className='w-full max-w-md mx-auto shadow-md rounded-lg px-6 my-9 text-black bg-gray-500'>
+   <div className='w-full h-screen bg-blue-300 pt-5'>
+     <div className='w-full max-w-md mx-auto shadow-md rounded-lg px-6  text-black bg-gray-500'>
        <h1 className='text-white text-center pt-3 mt-4'>Password Generator</h1>
-        <div className='flex shadow rounded-lg overflow-hidden mb-4'>
+        <div className='flex items-center shadow rounded-lg overflow-hidden mb-4'>
           <input 
           type="text"
           value={password}
-          className=' bg-amber-200 outline-none w-full py-1 px-3 my-6'
+          className=' bg-amber-200 outline-none w-full py-2 px-3 my-6'
           placeholder='password'
           readOnly
           ref={passwordRef}
            />
            <button
            onClick={copyPasswordToClipBoard}
-            className='outline-none bg-blue-700 text-white px-3 py-0.5 shrink-0'
+            className='outline-none bg-blue-700 text-white px-5 py-2 shrink-0'
            >Copy</button>
         </div>
         <div className='flex text-sm gap-x-2'>
